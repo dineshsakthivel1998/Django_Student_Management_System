@@ -1,0 +1,9 @@
+{% extends 'students/base.html' %}
+{% block content %}
+<h3>Student Detail</h3>
+Name: {{ student.name }} <br>
+Email: {{ student.email }} <br>
+Age: {{ student.age }} <br>
+Course: {{ student.course }} <br>
+<a href="{% url 'student_list' %}">Back</a>
+{% endblock %}
