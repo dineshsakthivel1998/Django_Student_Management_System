@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&6%&%%9i=4@o_97#os2ef$d!1+g)v=zayro50q%t*rgux^*$^^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -120,3 +120,8 @@ STATIC_URL = 'static/'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'student_list'
 LOGOUT_REDIRECT_URL = 'login'
+
+import os
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
